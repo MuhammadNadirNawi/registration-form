@@ -11,6 +11,7 @@
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
     <form action="https://register-demo.freecodecamp.org">
+      <!-- fieldset pertama berisi data dari user berupa nama, email, pass -->
       <fieldset>
         <label
           >Enter Your First Name: <input type="text" name="" id="" required
@@ -26,7 +27,20 @@
           <input type="password" required pattern="[a-z0-5]{8,}"
         /></label>
       </fieldset>
-      <fieldset></fieldset>
+      <fieldset>
+        <label
+          ><input type="radio" name="account-type" /> Personal Account</label
+        >
+        <label
+          ><input type="radio" name="account-type" /> Business Account</label
+        >
+        <label
+          ><input type="checkbox" required /> I accept the
+          <a href="https://www.freecodecamp.org/news/terms-of-service/"
+            >terms and conditions</a
+          ></label
+        >
+      </fieldset>
       <fieldset></fieldset>
       <input type="submit" value="Submit" name="" id="" />
     </form>
